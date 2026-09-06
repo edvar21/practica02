@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Eduardo Vargas Herrera</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'perfil/css/estilos.css' %}">
+</head>
+<body>
+    <main class="contenedor">
+        <div class="tarjeta">
+            <div class="encabezado">
+                <span class="insignia">Perfil personal</span>
+                <span class="disponible"><span></span> Disponible</span>
+            </div>
+
+            <div class="contenido">
+                <div class="avatar" aria-hidden="true">EV</div>
+                <p class="sobrelinea">Hola, soy</p>
+                <h1>Eduardo Vargas<br><em>Herrera</em></h1>
+                <p class="descripcion">Estudiante de Ciencias de la Computación con interés en crear aplicaciones web y móviles útiles, claras y fáciles de disfrutar.</p>
+
+                <div class="etiquetas" aria-label="Áreas de interés">
+                    <span>Desarrollo web</span>
+                    <span>Aplicaciones móviles</span>
+                </div>
+
+                <button id="btn-saludo">Conocer mi perfil <span aria-hidden="true">&#8594;</span></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'perfil/js/main.js' %}"></script>
+</body>
+</html>
